@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from collections.abc import Set as BaseSet, Iterable
+from collections import Set as BaseSet, Iterable
 
 from .datatype import Datatype
 from six import string_types
@@ -116,7 +116,7 @@ class Set(BaseSet, Datatype):
         return frozenset(new_value)
 
     def _check_type(self, new_value):
-        if not isinstance(new_value, collections.Iterable):
+        if not isinstance(new_value, Iterable):
             return False
         for element in new_value:
             if not isinstance(element, string_types):
