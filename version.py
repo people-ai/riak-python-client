@@ -75,6 +75,8 @@ __all__ = ['get_version']
 
 
 def get_version():
+    return "3.0.0.ppl"
+
     d = dirname(__file__)
 
     if isdir(join(d, '.git')):
