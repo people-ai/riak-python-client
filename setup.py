@@ -10,16 +10,8 @@ from commands import setup_timeseries, build_messages
 install_requires = ['six >= 1.8.0', 'basho_erlastic >= 2.1.1']
 requires = ['six(>=1.8.0)', 'basho_erlastic(>= 2.1.1)']
 
-if sys.version_info[:3] <= (2, 7, 9):
-    install_requires.append("pyOpenSSL >= 0.14")
-    requires.append("pyOpenSSL(>=0.14)")
-
-if sys.version_info[:3] <= (3, 0, 0):
-    install_requires.append('protobuf >=2.4.1, <2.7.0')
-    requires.append('protobuf(>=2.4.1, <2.7.0)')
-else:
-    install_requires.append('python3_protobuf >=2.4.1, <2.6.0')
-    requires.append('python3_protobuf(>=2.4.1, <2.6.0)')
+install_requires.append('python3_protobuf >=2.4.1, <2.6.0')
+requires.append('python3_protobuf(>=2.4.1, <2.6.0)')
 
 with codecs.open('README.md', 'r', 'utf-8') as f:
     readme_md = f.read()
@@ -57,9 +49,6 @@ setup(
     classifiers=['License :: OSI Approved :: Apache Software License',
                  'Intended Audience :: Developers',
                  'Operating System :: OS Independent',
-                 'Programming Language :: Python :: 2.7',
-                 'Programming Language :: Python :: 3.3',
-                 'Programming Language :: Python :: 3.4',
-                 'Programming Language :: Python :: 3.5',
+                 'Programming Language :: Python :: 3.9',
                  'Topic :: Database']
     )
