@@ -75,7 +75,7 @@ __all__ = ['get_version']
 
 
 def get_version():
-    return "3.0.0.ppl"
+    return "3.0.0"
 
     d = dirname(__file__)
 
