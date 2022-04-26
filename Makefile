@@ -128,3 +128,7 @@ help:
 	@echo ' timeseries-test  - Run timeseries integration tests         '
 	@echo ' ------------------------------------------------------------'
 	@echo ''
+
+.PHONY: build
+build:
+	@python setup.py sdist bdist_wheel
