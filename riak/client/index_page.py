@@ -13,7 +13,7 @@
 # limitations under the License.
 
 from collections import namedtuple
-from collections import Sequence
+from collections.abc import Sequence
 
 
 CONTINUATION = namedtuple('Continuation', ['c'])
