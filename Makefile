@@ -118,7 +118,7 @@ test: integration-test
 .PHONY: help
 help:
 	@echo ''
-	@echo ' Targets:
+	@echo ' Targets:'
 	@echo ' ------------------------------------------------------------'
 	@echo ' lint             - Run linter (flake8)                      '
 	@echo ' test             - Run all tests                            '
@@ -128,3 +128,7 @@ help:
 	@echo ' timeseries-test  - Run timeseries integration tests         '
 	@echo ' ------------------------------------------------------------'
 	@echo ''
+
+.PHONY: build
+build:
+	@python setup.py sdist bdist_wheel

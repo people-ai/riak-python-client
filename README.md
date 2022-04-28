@@ -16,11 +16,12 @@ Documentation for Riak is available [here](http://docs.basho.com/riak/latest).
 
 # Installation
 
-The recommended versions of Python for use with this client are Python `2.7.8` (or greater, `2.7.11` as of `2016-06-21`), `3.3.x`, `3.4.x` and `3.5.x`. The latest version from each series should be preferred. Older versions of the Python `2.7.X` and `3.X` series should be used with caution as they are not covered by integration tests.
+The recommended versions of Python for use with this client are Python `3.9`. 
+The latest version from each series should be preferred. 
 
 ## Riak TS (Timeseries)
 
-You must use version `2.7.11`, `3.4.4` or `3.5.1` (or greater within a version series). Otherwise you will be affected by [this Python bug](https://bugs.python.org/issue23517).
+You must use version `3.9` (or greater within a version series). Otherwise you will be affected by [this Python bug](https://bugs.python.org/issue23517).
 
 ## From Source
 
