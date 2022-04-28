@@ -16,7 +16,7 @@
 # limitations under the License.
 
 from __future__ import print_function
-from collections import Iterable
+from collections.abc import Iterable
 from collections import namedtuple
 from six import string_types, PY2
 

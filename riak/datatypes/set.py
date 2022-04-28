@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from collections import Set as BaseSet, Iterable
+from collections.abc import Set as BaseSet, Iterable
 
 from .datatype import Datatype
 from six import string_types
