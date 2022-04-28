@@ -12,21 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Gets the current version number.
-If in a git repository, it is the current git tag.
-Otherwise it is the one contained in the PKG-INFO file.
-
-To use this script, simply import it in your setup.py file
-and use the results of get_version() as your package version::
-
-    from version import *
-
-    setup(
-        version=get_version()
-    )
-"""
-
 from __future__ import print_function
 
 __all__ = ['get_version']
