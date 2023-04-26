@@ -10,8 +10,8 @@ from commands import setup_timeseries, build_messages
 install_requires = ['six >= 1.8.0', 'basho_erlastic >= 2.1.1']
 requires = ['six(>=1.8.0)', 'basho_erlastic(>= 2.1.1)']
 
-install_requires.append('python3_protobuf >=2.4.1, <2.6.0')
-requires.append('python3_protobuf(>=2.4.1, <2.6.0)')
+install_requires.append('protobuf >=4.21.5, <5.0')
+requires.append('protobuf(>=4.21.5, <5.0)')
 
 with codecs.open('README.md', 'r', 'utf-8') as f:
     readme_md = f.read()
