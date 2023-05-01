@@ -18,7 +18,7 @@ __all__ = ['get_version']
 
 
 def get_version():
-    return "3.0.0"
+    return "4.0.0"
 
 
 if __name__ == '__main__':
